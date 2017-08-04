@@ -1,0 +1,235 @@
+﻿
+LANGUAGE FUNDAMENTALS
+. Given the following,
+1. public class Test {
+2. public static void main(String [] args) {
+3. signed int x = 10;
+4. for (int y=0; y<5; y++, x--)
+5. System.out.print(" " + x);
+6. }
+7. }
+ANS:C
+what is the result? (Choose one.)
+A. 10 9 8 7 6
+B. 9 8 7 6 5
+C. Compilation fails
+D. An exception is thrown at runtime
+2. Which is a reserved word in the Java programming language? (Choose one.)
+A. method
+B. native
+C. subclasses
+D. reference
+E. array
+ANS:B
+3. Which one of these lists contains only Java programming language keywords? (Choose one.)
+A. class, if, void, long, Int, continue
+B. goto, instanceof, native, finally, default, throws
+C. try, virtual, throw, final, volatile, transient
+D. strictfp, constant, super, implements, do
+E. byte, break, assert, switch, include
+4. Which two are keywords? 
+A. interface
+B. unsigned
+C. Float
+D. this
+E. string
+ANS:B
+5. Which three are valid declarations of a char? 
+A. char c1 = 064770;
+B. char c2 = ‘face’;
+C. char c3 = 0xbeef;
+D. char c4 = \u0022;
+E. char c5 = ‘\iface’;
+F. char c6 = ‘\uface’;
+ANS:A,C,F
+6. Which two are valid declarations of a String? 
+A. String s1 = null;
+B. String s2 = ‘null’;
+C. String s3 = (String) ‘abc’;
+D. String s4 = (String) ‘\ufeed’;
+E. String s5 = “strings rule”;
+ANS:A,E
+7. Which one is a valid declaration of a boolean? 
+A. boolean b1 = 0;
+B. boolean b2 = ‘false’;
+C. boolean b3 = false;
+D. boolean b4 = Boolean.false();
+E. boolean b5 = no;
+ANS:C
+8. What is the numerical range of a char? 
+A. –128 to 127
+B. –(2 ^ 15) to (2 ^ 15) - 1
+C. 0 to 32767
+D. Platform dependent
+E. 0 to 65535
+ANS:E
+9. Which three are valid declarations of a float? 
+A. float f1 = -343;
+B. float f2 = 3.14;
+C. float f3 = 0x12345;
+D. float f4 = 42e7;
+E. float f5 = 2001.0D;
+F. float f6 = 2.81F;
+ANS:A,C
+10. Which three are legal array declarations? 
+A. int [] myScores [];
+B. char [] myChars;
+C. int [6] myScores;
+D. Dog myDogs [];
+E. Dog myDogs [7];
+ANS:A,B
+11. Given the following,
+1. public class Test {
+2. public static void main(String [] args)
+3. int [] [] [] x = new int [3] [] [];
+4. int i,j;
+5. x[0] = new int[4][];
+6. x[1] = new int[2][];
+7. x[2] = new int[5][];
+8. for (i=0; i<x.length; i++)
+9. for (j=0; j<x[i].length; j++) {
+10. x[i][j] = new int [i + j + 1];
+11. System.out.println("size = " + x[i][j].length);
+12. }
+13. }
+14. }
+how many lines of output will be produced? 
+A. 7
+B. 9
+C. 11
+D. 13
+E. Compilation fails
+F. An exception is thrown at runtime
+ANS:C
+12. Given the following,
+1. public class Test {
+2. public static void main(String [] args) {
+3. byte [][] big = new byte [7][7];
+4. byte [][] b = new byte [2][1];
+5. byte b3 = 5;
+6. byte b2 [][][][] = new byte [2][3][1][2];
+7.
+8. }
+9. }
+ANS:A,B,E,F
+13. Which two will declare an array and initialize it with five numbers? 
+A. Array a = new Array(5);
+B. int [] a = {23,22,21,20,19};
+C. int [] array;
+D. int array [] = new int [5];
+E. int a [] = new int(5);
+F. int [5] array;
+ANS:B,D
+14. Which will legally declare, construct, and initialize an array? 
+A. int [] myList = {“1”, “2”, “3”};
+B. int [] myList = (5, 8, 2);
+C. int myList [] [] = {4,9,7,0};
+D. int myList [] = {4, 3, 7};
+E. int [] myList = [3, 5, 6];
+F. int myList [] = {4; 6; 5};
+ANS:D
+15. Which four describe the correct default values for array elements of the types indicated?
+
+A. int -> 0
+B. String -> “null”
+C. Dog -> null
+D. char -> ‘\u0000’
+E. float -> 0.0f
+F. boolean -> true
+ANS:A,C,D,E
+16. Given the following,
+1. public class TestDogs {
+2. public static void main(String [] args) {
+3. Dog [][] theDogs = new Dog[3][];
+4. System.out.println(theDogs[2][0].toString());
+5. }
+6. }
+
+7.
+8. class Dog {}
+what is the result? 
+A. null
+B. theDogs
+C. Compilation fails
+D. An exception is thrown at runtime
+ANS:D
+17. Given the following,
+1. public class X {
+2. public static void main(String [] args) {
+3. String names [] = new String[5];
+4. for (int x=0; x < args.length; x++)
+5. names[x] = args[x];
+6. System.out.println(names[2]);
+7. }
+8. }
+and the command line invocation is
+java X a b
+what is the result? (Choose one.)
+A. names
+B. null
+C. Compilation fails
+D. An exception is thrown at runtime
+ANS:B
+18. Given the following,
+1. public class CommandArgs {
+2. public static void main(String [] args) {
+3. String s1 = args[1];
+4. String s2 = args[2];
+5. String s3 = args[3];
+6. String s4 = args[4];
+7. System.out.print(" args[2] = " + s2);
+8. }
+9. }
+java CommandArgs 1 2 3 4
+what is the result?
+A. args[2] = 2
+B. args[2] = 3
+C. args[2] = null
+D. args[2] = 1
+E. Compilation fails
+F. An exception is thrown at runtime
+ANS:F
+19. Given the following,
+1. public class CommandArgsTwo {
+2. public static void main(String [] argh) {
+3. String [] args;
+4. int x;
+5. x = argh.length;
+6. for (int y = 1; y <= x; y++) {
+7. System.out.print(" " + argh[y]);
+8. }
+9. }
+10. }
+and the command-line invocation,
+java CommandArgsTwo 1 2 3
+what is the result?
+A. 0 1 2
+B. 1 2 3
+C. 0 0 0
+D. null null null
+E. Compilation fails
+F. An exception is thrown at runtime
+ANS:F
+20. Given the following,
+1. public class CommandArgsThree {
+2. public static void main(String [] args) {
+3. String [][] argCopy = new String[2][2];
+4. int x;
+5. argCopy[0] = args;
+6. x = argCopy[0].length;
+7. for (int y = 0; y < x; y++) {
+8. System.out.print(" " + argCopy[0][y]);
+9. }
+10. }
+11. }
+and the command-line invocation,
+java CommandArgsThree 1 2 3
+what is the result?
+A. 0 0
+B. 1 2
+C. 0 0 0
+D. 1 2 3
+E. Compilation fails
+F. An exception is thrown at runtime
+ANS:D
+

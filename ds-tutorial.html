@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content="5;url=welcome.html" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>::DS tutorial::</title>
+	<!-- Local bootstrap CSS & JS -->
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Revalia">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dheerese.js"></script>
+	<script src="check.js"></script>
+
+</head>
+<body oncontextmenu="disable();"><!-- <section id="codenex"><br>
+<center><img src="img/logo.jpg" alt="" class="appear"></center>
+	<h1><span>C</span>O<span>D</span>E<span>N</span>E<span class="x">X</span></h1>
+	
+<br><br>
+	<h3 id="fromleft">An E-Learning Website </h3><h3 id="fromright">For Programmers</h3><br>
+
+	<center><br>
+		<a class="a" href="#start">Start Here <strong><font color="white">></font><font color="red">></font></strong></a>
+	</center><br><br></section> -->
+	<!-- <br><br><br><br><br><br> -->
+	<section id="start">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			<div class="navbar-header">
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+<!-- <a href="#open" class="text-right" style="color:black;text-decoration:none;"><h2 style="color:white;" onclick="openNav()">&#9758;</h2></a> -->
+<div class="logo-nav"></div>
+<a href="index.html" style="font-size:30px;color:white;text-decoration:none;">
+
+CodeNex <a href="#open" onclick="openNav()" class="dots" style="font-size:30px;color:white;text-decoration:none;"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li></li>
+					<li><a href="index.html"><b>Home</b></a></li>
+					
+					<!-- <li><a href="#">Tutorials</a></li> -->
+					<li>
+						<a href="alltest.html" target="_blank"><b>Test</b></a>
+						<!-- <ul class="dropdown-menu">
+							<li><a target="_blank" href="c-test.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a target="_blank" href="java-test.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a target="_blank" href="ds-test.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							
+						</ul> -->
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Tutorials</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="c-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="java-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="ds-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="sql-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Programs</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<!-- <li><a href="#">Program</a></li> -->
+					<li><a href="contact.html"><b>About Us</b></a></li>
+				</ul>
+				
+			</div>
+			
+  
+
+		</div>
+
+	</nav>
+	     <!-- <div class="container"><br><br>
+	     	<h3><i class="fa fa-users fa-2x"></i></h3>
+	     	<h2 class="text-center" style="color:#747275">Tutorials</h2><br><br><br>
+	     	<div class="row">
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center c slideanim"><br><img class="img-responsive icon" src="icons/c.png" alt="c"><br><b>C</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center java slideanim1"><br><img class="img-responsive icon" src="icons/java.png" alt="java"><br><b>Java</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center ds slideanim"><br><img class="img-responsive icon" src="icons/ds.png" alt="ds"><br><b>DS</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center sql slideanim1"><br><img class="img-responsive icon" src="icons/sql.png" alt="sql"><br><b>Sql</b><br><br></div>
+	     		</div></a>
+	     	</div><br><br><br>
+	     </div> -->
+		</section>
+                 
+                  <!-- list of test types -->
+		<!-- <section id="alltest"> 
+		<div style="background-color:#ebffec;"><br><br><br><br>
+
+			<h3 align="center" style="color:black;">Select Desired Test</h3><br>
+			<p align="center">All questions are asked in competitive exams, here it is for you!!!</p><br></div>
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Warmup Test-Including C, DS and Java</h4>
+					<center><a href="warmup.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Test-Including C, DS and Java</h4>
+					
+				<center><a href="mix.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">SQL Test</h4>
+					
+				<center><a href="sql-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">C Test</h4>
+					
+				<center><a href="c-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Java Test</h4>
+					
+				<center><a href="java-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Data Structure Test</h4>
+					
+				<center><a href="ds-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+		</section> -->
+
+
+		<section id="tutorial-page"><br>
+		<div style="background-color:#fcf8e3;"><br><br><h3><i class="fa fa-users fa-2x"></i></h3>
+	     		<h2 class="text-center" style="color:#747275">Data Structures</h2><br>
+	     		<br></div><br>
+			<div class="container">
+				<div class="panel-group" id="accordion">
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Overview</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body ubuntu"><strong style="font-size:250%;">D</strong>ata Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage. For example, we have data player's name "Virat" and age 26. Here "Virat" is of String data type and 26 is of integer data type.
+We can organize this data as a record like Player record. Now we can collect and store player's records in a file or database as a data structure. For example: "Dhoni" 30, "Gambhir" 31, "Sehwag" 33
+In simple language, Data Structures are structures programmed to store ordered data, so that various operations can be performed on it easily.
+<br>
+<b class="ubuntu">Basic types of Data Structures : </b><br>
+As we discussed above, anything that can store data can be called as a data strucure, hence Integer, Float, Boolean, Char etc, all are data structures. They are known as Primitive Data Structures.
+Then we also have some complex Data Structures, which are used to store large and connected data. Some example of Abstract Data Structure are :
+<li class="ubuntu" style="font-size:100%">Linked List</li>
+<li class="ubuntu" style="font-size:100%">Tree</li>
+<li class="ubuntu" style="font-size:100%">Graph</li>
+<li class="ubuntu" style="font-size:100%">Stack, Queue etc.</li><br>
+
+<img src="ds.jpg" alt="" class="img-responsive">
+
+
+
+All these data structures allow us to perform different operations on data. We select these data structures based on which type of operation is required. We will look into these data structures in more details in our later lessons.
+
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Sorting</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Sorting is nothing but storage of data in sorted order, it can be in ascending or descending order. The term Sorting comes into picture with the term Searching. There are so many things in our real life that we need to search, like a particular record in database, roll numbers in merit list, a particular telephone number, any particular page in a book etc.
+Sorting arranges data in a sequence which makes searching easier. Every record which is going to be sorted will contain one key. Based on the key the record will be sorted. For example, suppose we have a record of students, every such record will have the following data:
+<li class="ubuntu" style="font-size:100%">Roll No.</li>
+<li class="ubuntu" style="font-size:100%">Name</li>
+<li class="ubuntu" style="font-size:100%">Age</li>
+<li class="ubuntu" style="font-size:100%">Class</li><br>
+
+
+
+Here Student roll no. can be taken as key for sorting the records in ascending or descending order. Now suppose we have to search a Student with roll no. 15, we don't need to search the complete record we will simply search between the Students with roll no. 10 to 20. <br>
+
+<b class="ubuntu">Types of Sorting Techniques : </b><br>
+There are many types of Sorting techniques, differentiated by their efficiency and space requirements. Following are some sorting techniques which we will be covering in next sections.
+<li class="ubuntu" style="font-size:100%">Bubble Sort</li>
+<li class="ubuntu" style="font-size:100%">Insertion Sort</li>
+<li class="ubuntu" style="font-size:100%">Selection Sort</li><br>
+
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Bubble Sort</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Bubble Sort is an algorithm which is used to sort N elements that are given in a memory for eg: an Array with N number of elements. Bubble Sort compares all the element one by one and sort them based on their values.
+It is called Bubble sort, because with each iteration the smaller element in the list bubbles up towards the first place, just like a water bubble rises up to the water surface.
+Sorting takes place by stepping through all the data items one-by-one in pairs and comparing adjacent data items and swapping each pair that is out of order.<br>
+<img src="bubble.jpg" alt="" class="img-responsive"><br>
+<b class="ubuntu">Sorting using Bubble Sort Algorithm : </b>
+Let's consider an array with values {5, 1, 6, 2, 4, 3} <br>
+<pre>
+int a[6] = {5, 1, 6, 2, 4, 3};
+int i, j, temp;
+for(i=0; i<6; i++)
+{
+  for(j=0; j<6-i-1; j++)
+  {
+    if( a[j] > a[j+1])
+    {
+      temp = a[j];
+      a[j] = a[j+1];
+      a[j+1] = temp;
+    } 
+  }
+}
+//now you can print the sorted array after this
+</pre>
+
+</div>
+      </div>
+    </div>
+     <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Insertion Sort</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">It is a simple Sorting algorithm which sorts the array by shifting elements one by one. <br>Following are some of the important characteristics of Insertion Sort.
+<br>1.	It has one of the simplest implementation <br>
+2.	It is efficient for smaller data sets, but very inefficient for larger lists. <br>
+3.	Insertion Sort is adaptive, that means it reduces its total number of steps if given a partially sorted list, hence it increases its efficiency. <br>
+4.	It is better than Selection Sort and Bubble Sort algorithms. <br>
+5.	Its space complexity is less, like Bubble Sorting, inerstion sort also requires a single additional memory space. <br>
+6.	It is Stable, as it does not change the relative order of elements with equal keys. <br>
+<img src="insertion.jpg" alt="" class="img-responsive"><br>
+<img src="insertion1.jpg" alt="" class="img-responsive"><br>
+<b class="ubuntu">Sorting using Insertion Sort Algorithm :</b><br>
+<pre>
+int a[6] = {5, 1, 6, 2, 4, 3};
+int i, j, key;
+for(i=1; i<6; i++)
+{
+  key = a[i];
+  j = i-1;
+  while(j>=0 && key < a[j])
+  {
+    a[j+1] = a[j];
+    j--;
+  }
+  a[j+1] = key;
+}
+
+</pre>
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Selection Sort</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Selection sorting is conceptually the most simplest sorting algorithm. <br>This algorithm first finds the smallest element in the array and exchanges it with the element in the first position, then find the second smallest element and exchange it with the element in the second position, and continues in this way until the entire array is sorted.
+			<br>
+		<img src="selection.jpg" alt="" class="img-responsive">	
+			<br>
+			In the first pass, the smallest element found is 1, so it is placed at the first position, then leaving first element, smallest element is searched from the rest of the elements, 3 is the smallest, so it is then placed at the second position. Then we leave 1 nad 3, from the rest of the elements, we search for the smallest and put it at third position and keep doing this, until array is sorted.
+			<br>
+			<b class="ubuntu">Sorting using Selection Sort Algorithm :</b><br>
+<pre>
+void selectionSort(int a[], int size)
+{
+  int i, j, min, temp;
+  for(i=0; i < size-1; i++ )
+  {
+    min = i;   //setting min as i
+    for(j=i+1; j < size; j++)
+    {
+      if(a[j] < a[min])   //if element at j is less than element at min position
+      {
+       min = j;    //then set min as j
+      }
+    }
+   temp = a[i];
+   a[i] = a[min];
+   a[min] = temp;
+  }
+}
+
+</pre>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Stacks</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Stack is an abstract data type with a bounded(predefined) capacity. It is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack, the only element that can be removed is the element that was at the top of the stack, just like a pile of objects.
+		<br>
+		<img src="stack.jpg" alt="" class="img-responsive">	
+
+		<br>
+		<b class="ubuntu">Basic features of Stack :</b><br>
+1.	Stack is an ordered list of similar data type. <br>
+2.	Stack is a LIFO structure. (Last in First out). <br>
+3.	push() function is used to insert new elements into the Stack and pop() is used to delete an element from the stack. Both insertion and deletion are allowed at only one end of Stack called Top. <br>
+4.	Stack is said to be in Overflow state when it is completely full and is said to be in Underflow state if it is completely empty. <br>
+
+<b class="ubuntu">Applications of Stack : </b><br>
+The simplest application of a stack is to reverse a word. You push a given word to stack - letter by letter - and then pop letters from the stack.
+There are other uses also like : Parsing, Expression Conversion(Infix to Postfix, Postfix to Prefix etc) and many more. <br>
+
+<b class="ubuntu">Implementation of Stack : </b><br>
+Stack can be easily implemented using an Array or a Linked List. Arrays are quick, but are limited in size and Linked List requires overhead to allocate, link, unlink, and deallocate, but is not limited in size. <br>
+
+        </div>
+      </div>
+    </div>
+
+     <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Queue</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Queue is also an abstract data type or a linear data structure, in which the first element is inserted from one end called REAR(also called tail), and the deletion of exisiting element takes place from the other end called as FRONT(also called head). This makes queue as FIFO data structure, which means that element inserted first will also be removed first.
+<br>The process to add an element into queue is called Enqueue and the process of removal of an element from queue is called Dequeue.
+<br>
+		<img src="queue.jpg" alt="" class="img-responsive">	
+
+<br>
+<b class="ubuntu">Basic features of Queue :</b><br>
+1.	Like Stack, Queue is also an ordered list of elements of similar data types. <br>
+2.	Queue is a FIFO( First in First Out ) structure. <br>
+3.	Once a new element is inserted into the Queue, all the elements inserted before the new element in the queue must be removed, to remove the new element. <br>
+4.	peek( ) function is oftenly used to return the value of first element without dequeuing it. <br>
+
+<b class="ubuntu">Applications of Queue :</b><br>
+1.Queue, as the name suggests is used whenever we need to have any group of objects in an order in which the first one coming in, also gets out first while the others wait for there turn, like in the following scenarios :  <br>
+2.	Serving requests on a single shared resource, like a printer, CPU task scheduling etc. <br>
+3.	In real life, Call Center phone systems will use Queues, to hold people calling them in an order, until a service served. <br>
+
+</div>
+      </div>
+    </div>
+   
+			</div>
+		</section>
+
+
+
+	<!--footer here-->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+				    <h4>What is CodeNex</h4><br>
+                    <p><a href="contact.html">About Us</a></p>
+                    <p><a href="contact.html">Authors</a></p>
+                    <p><a href="contact.html">Contact Us</a></p><br>
+                    
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Tutorials</h4><br>
+                    <p><a href="c-tutorial.html">C</a></p>
+                    <p><a href="java-tutorial.html">Java</a></p>
+                    <p><a href="ds-tutorial.html">DS</a></p>
+                    <p><a href="sql-tutorial.html">Sql</a></p><br>
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Test</h4><br>
+                    <p><a href="c-test.html">C</a></p>
+                    <p><a href="java-test.html">Java</a></p>
+                    <p><a href="ds-test.html">DS</a></p><br>
+                    
+				
+				</div><br><br>
+			</div><hr width="15%"><br><br>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 text-center">
+					<a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-google-plus fa-3x"></i></a>
+				</div><br><br><br>
+				<div class="col-md-4"></div>
+			</div><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md_12 text-center"><p><b><i class="fa fa-copyright 2x text-center"></i> CodeNex - SRS</b></p></div>
+				</div>
+			</div><br><br>
+			
+			<div class="row">
+				<div class="col-md-12 text-center">
+				<a href="#start">
+				<i class="fa fa-chevron-up fa-2x"></i>
+				</a>
+			</div>
+			</div>
+		</div><br><br>
+	</section>
+<!--left side menu-->
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn text-center" onclick="closeNav()" style="color:#818181;"><b><i class="fa fa-times" aria-hidden="true"></i></b></a>
+<a href="index.html">Home</a>
+<a href="alltest.html">Test</a>
+<a href="c-tutorial.html">Tutorials</a>
+<a href="#">Program</a>
+<a href="contact.html">About Us</a>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+	$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-c-java");
+        }
+    });
+  });
+	$(window).scroll(function() {
+    $(".slideanim1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-ds-sql");
+        }
+    });
+  });
+</script>
+</body>
+</html>

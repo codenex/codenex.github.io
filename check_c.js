@@ -1,0 +1,145 @@
+function validatec(){
+	count=0;
+	if(document.getElementById("q12").checked)
+		count=count+1;
+	if(document.getElementById("q23").checked)
+		count=count+1;
+	if(document.getElementById("q31").checked)
+		count=count+1;
+	if(document.getElementById("q42").checked)
+		count=count+1;
+	if(document.getElementById("q54").checked)
+		count=count+1;
+	if(document.getElementById("q62").checked)
+		count=count+1;
+	if(document.getElementById("q72").checked)
+		count=count+1;
+	if(document.getElementById("q81").checked)
+		count=count+1;
+	if(document.getElementById("q93").checked)
+		count=count+1;
+	if(document.getElementById("q103").checked)
+		count=count+1;
+		if(count<=5)
+		{
+			document.getElementById('img1').src="sad.png";
+		}
+		else{
+			document.getElementById('img1').src="happy.png";
+		}
+		// alert('You scored '+count+' out of 10 !!!');
+		document.getElementById("test-result").innerHTML=count;
+		
+		
+		}
+
+	function visiblec(){
+		document.getElementById("correct1").style.visibility="visible";
+		document.getElementById("correct2").style.visibility="visible";
+		document.getElementById("correct3").style.visibility="visible";
+		document.getElementById("correct4").style.visibility="visible";
+		document.getElementById("correct5").style.visibility="visible";
+		document.getElementById("correct6").style.visibility="visible";
+		document.getElementById("correct7").style.visibility="visible";
+		document.getElementById("correct8").style.visibility="visible";
+		document.getElementById("correct9").style.visibility="visible";
+		document.getElementById("correct10").style.visibility="visible";
+	}
+
+
+function validatejava(){
+	count=0;
+	if(document.getElementById("q13").checked)
+		count=count+1;
+	if(document.getElementById("q22").checked)
+		count=count+1;
+	if(document.getElementById("q31").checked)
+		count=count+1;
+	if(document.getElementById("q42").checked)
+		count=count+1;
+	if(document.getElementById("q53").checked)
+		count=count+1;
+	if(document.getElementById("q64").checked)
+		count=count+1;
+	if(document.getElementById("q71").checked)
+		count=count+1;
+	if(document.getElementById("q82").checked)
+		count=count+1;
+	if(document.getElementById("q94").checked)
+		count=count+1;
+	if(document.getElementById("q104").checked)
+		count=count+1;
+		if(count<=5)
+		{
+			document.getElementById('img1').src="sad.png";
+		}
+		else{
+			document.getElementById('img1').src="happy.png";
+		}
+		// alert('You scored '+count+' out of 10 !!!');
+		document.getElementById("test-result").innerHTML=count;
+		
+		
+		}
+
+	function visiblejava(){
+		document.getElementById("correct1").style.visibility="visible";
+		document.getElementById("correct2").style.visibility="visible";
+		document.getElementById("correct3").style.visibility="visible";
+		document.getElementById("correct4").style.visibility="visible";
+		document.getElementById("correct5").style.visibility="visible";
+		document.getElementById("correct6").style.visibility="visible";
+		document.getElementById("correct7").style.visibility="visible";
+		document.getElementById("correct8").style.visibility="visible";
+		document.getElementById("correct9").style.visibility="visible";
+		document.getElementById("correct10").style.visibility="visible";
+	}
+
+function validateds(){
+	count=0;
+	if(document.getElementById("q14").checked)
+		count=count+1;
+	if(document.getElementById("q21").checked)
+		count=count+1;
+	if(document.getElementById("q33").checked)
+		count=count+1;
+	if(document.getElementById("q41").checked)
+		count=count+1;
+	if(document.getElementById("q53").checked)
+		count=count+1;
+	if(document.getElementById("q64").checked)
+		count=count+1;
+	if(document.getElementById("q74").checked)
+		count=count+1;
+	if(document.getElementById("q81").checked)
+		count=count+1;
+	if(document.getElementById("q92").checked)
+		count=count+1;
+	if(document.getElementById("q101").checked)
+		count=count+1;
+		if(count<=5)
+		{
+			document.getElementById('img1').src="sad.png";
+		}
+		else{
+			document.getElementById('img1').src="happy.png";
+		}
+		// alert('You scored '+count+' out of 10 !!!');
+		document.getElementById("test-result").innerHTML=count;
+		
+		
+		}
+
+	function visibleds(){
+		document.getElementById("correct1").style.visibility="visible";
+		document.getElementById("correct2").style.visibility="visible";
+		document.getElementById("correct3").style.visibility="visible";
+		document.getElementById("correct4").style.visibility="visible";
+		document.getElementById("correct5").style.visibility="visible";
+		document.getElementById("correct6").style.visibility="visible";
+		document.getElementById("correct7").style.visibility="visible";
+		document.getElementById("correct8").style.visibility="visible";
+		document.getElementById("correct9").style.visibility="visible";
+		document.getElementById("correct10").style.visibility="visible";
+	}
+		

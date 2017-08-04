@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content="5;url=welcome.html" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>::SQL Tutorial::</title>
+	<!-- Local bootstrap CSS & JS -->
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Revalia">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dheerese.js"></script>
+	<script src="check.js"></script>
+
+</head>
+<body oncontextmenu="disable();"><!-- <section id="codenex"><br>
+<center><img src="img/logo.jpg" alt="" class="appear"></center>
+	<h1><span>C</span>O<span>D</span>E<span>N</span>E<span class="x">X</span></h1>
+	
+<br><br>
+	<h3 id="fromleft">An E-Learning Website </h3><h3 id="fromright">For Programmers</h3><br>
+
+	<center><br>
+		<a class="a" href="#start">Start Here <strong><font color="white">></font><font color="red">></font></strong></a>
+	</center><br><br></section> -->
+	<!-- <br><br><br><br><br><br> -->
+	<section id="start">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			<div class="navbar-header">
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+<!-- <a href="#open" class="text-right" style="color:black;text-decoration:none;"><h2 style="color:white;" onclick="openNav()">&#9758;</h2></a> -->
+<div class="logo-nav"></div>
+<a href="index.html" style="font-size:30px;color:white;text-decoration:none;">
+
+CodeNex <a href="#open" onclick="openNav()" class="dots" style="font-size:30px;color:white;text-decoration:none;"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li></li>
+					<li><a href="index.html"><b>Home</b></a></li>
+					
+					<!-- <li><a href="#">Tutorials</a></li> -->
+					<li>
+						<a href="alltest.html" target="_blank"><b>Test</b></a>
+						<!-- <ul class="dropdown-menu">
+							<li><a target="_blank" href="c-test.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a target="_blank" href="java-test.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a target="_blank" href="ds-test.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							
+						</ul> -->
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Tutorials</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="c-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="java-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="ds-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="sql-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Programs</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<!-- <li><a href="#">Program</a></li> -->
+					<li><a href="contact.html"><b>About Us</b></a></li>
+				</ul>
+				
+			</div>
+			
+  
+
+		</div>
+
+	</nav>
+	     <!-- <div class="container"><br><br>
+	     	<h3><i class="fa fa-users fa-2x"></i></h3>
+	     	<h2 class="text-center" style="color:#747275">Tutorials</h2><br><br><br>
+	     	<div class="row">
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center c slideanim"><br><img class="img-responsive icon" src="icons/c.png" alt="c"><br><b>C</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center java slideanim1"><br><img class="img-responsive icon" src="icons/java.png" alt="java"><br><b>Java</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center ds slideanim"><br><img class="img-responsive icon" src="icons/ds.png" alt="ds"><br><b>DS</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center sql slideanim1"><br><img class="img-responsive icon" src="icons/sql.png" alt="sql"><br><b>Sql</b><br><br></div>
+	     		</div></a>
+	     	</div><br><br><br>
+	     </div> -->
+		</section>
+                 
+                  <!-- list of test types -->
+		<!-- <section id="alltest"> 
+		<div style="background-color:#ebffec;"><br><br><br><br>
+
+			<h3 align="center" style="color:black;">Select Desired Test</h3><br>
+			<p align="center">All questions are asked in competitive exams, here it is for you!!!</p><br></div>
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Warmup Test-Including C, DS and Java</h4>
+					<center><a href="warmup.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Test-Including C, DS and Java</h4>
+					
+				<center><a href="mix.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">SQL Test</h4>
+					
+				<center><a href="sql-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">C Test</h4>
+					
+				<center><a href="c-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Java Test</h4>
+					
+				<center><a href="java-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Data Structure Test</h4>
+					
+				<center><a href="ds-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+		</section> -->
+
+
+		<section id="tutorial-page"><br>
+		<div style="background-color:#dff0d8;"><br><br><h3><i class="fa fa-users fa-2x"></i></h3>
+	     		<h2 class="text-center" style="color:#747275">Structured Query Language</h2><br>
+	     		<br></div><br>
+			<div class="container">
+				
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Overview</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body ubuntu">
+        <strong style="font-size:250%;">S</strong>QL tutorial gives unique learning on Structured Query Language and it helps to make practice on SQL commands which provides immediate results. 
+        <br>SQL is a language of database, it includes database creation, deletion, fetching rows and modifying rows etc.
+<br>SQL is an ANSI (American National Standards Institute) standard but there are many different versions of the SQL language. <br>
+
+<b class="ubuntu">What is SQL?</b><br>
+SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in relational database.
+SQL is the standard language for Relation Database System. All relational database management systems like MySQL, MS Access, Oracle, Sybase, Informix, postgres and SQL Server use SQL as standard database language. <br>
+Also, they are using different dialects, such as: <br>
+•	MS SQL Server using T-SQL, <br>
+•	Oracle using PL/SQL, <br>
+•	MS Access version of SQL is called JET SQL (native format) etc. <br>
+<b class="ubuntu">Why SQL?</b><br>
+•	Allows users to access data in relational database management systems. <br>
+•	Allows users to describe the data. <br>
+•	Allows users to define the data in database and manipulate that data. <br>
+•	Allows to embed within other languages using SQL modules, libraries & pre-compilers. <br>
+•	Allows users to create and drop databases and tables. <br>
+•	Allows users to create view, stored procedure, functions in a database. <br>
+•	Allows users to set permissions on tables, procedures, and views. <br>
+
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">SQL Process</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        When you are executing an SQL command for any RDBMS, the system determines the best way to carry out your request and SQL engine figures out how to interpret the task. <br>
+There are various components included in the process. These components are Query Dispatcher, Optimization Engines, Classic Query Engine and SQL Query Engine, etc. <br> Classic query engine handles all non-SQL queries but SQL query engine won't handle logical files.
+Following is a simple diagram showing SQL Architecture: <br>
+<img src="sqlprocess.jpg" alt="" class="img-responsive"><br>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">SQL Commands</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        	The standard SQL commands to interact with relational databases are CREATE, SELECT, INSERT, UPDATE, DELETE and DROP. <br> These commands can be classified into groups based on their nature : <br><br>
+        	<b class="ubuntu">DDL - Data Definition Language : </b><br><br>
+        	<div class="table-responsive">
+        		<table class="table table-hover">
+        			<thead>
+        				<tr>
+        					<th class="ubuntu">Command</th>
+        					<th class="ubuntu">Description</th>
+             			</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td class="ubuntu">CREATE</td>
+        					<td class="ubuntu">Creates a new table, a view of a table, or other object in database</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">ALTER</td>
+        					<td class="ubuntu">Modifies an existing database object, such as a table</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">DROP</td>
+        					<td class="ubuntu">Deletes an entire table, a view of a table or other object in the database</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+        	<br>
+        	<b class="ubuntu">DML - Data Manipulation Language :</b><br><br>
+        	<div class="table-responsive">
+        		<table class="table table-hover">
+        			<thead>
+        				<tr>
+        					<th class="ubuntu">Command</th>
+        					<th class="ubuntu">Description</th>
+             			</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td class="ubuntu">SELECT</td>
+        					<td class="ubuntu">Retrieves certain records from one or more tables</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">INSERT</td>
+        					<td class="ubuntu">Creates a record</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">UPDATE</td>
+        					<td class="ubuntu">Modifies records</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">DELETE</td>
+        					<td class="ubuntu">Deletes records</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+        	<br>
+        	<b class="ubuntu">DCL - Data Control Language :</b><br><br>
+            <div class="table-responsive">
+        		<table class="table table-hover">
+        			<thead>
+        				<tr>
+        					<th class="ubuntu">Command</th>
+        					<th class="ubuntu">Description</th>
+             			</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td class="ubuntu">GRANT</td>
+        					<td class="ubuntu">Gives a privilege to user</td>
+        				</tr>
+        				<tr>
+        					<td class="ubuntu">REVOKE</td>
+        					<td class="ubuntu">Takes back privileges granted from user</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Terminologies</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        	<b class="ubuntu">What is RDBMS?</b><br>
+RDBMS stands for<code class="ubuntu"> Relational Database Management System </code>. RDBMS is the basis for SQL, and for all modern database systems like MS SQL Server,<br> IBM DB2, Oracle, MySQL, and Microsoft Access. <br>
+A Relational database management system (RDBMS) is a database management system (DBMS) that is based on the relational model as introduced by E. F. Codd. <br><br>
+<b class="ubuntu">What is table?</b><br>
+The data in RDBMS is stored in database objects called tables. The table is a collection of related data entries and it consists of columns and rows. <br>
+Remember, a table is the most common and simplest form of data storage in a relational database. Following is the example of a CUSTOMERS table: <br><br>
+        
+<img src="sqltable.jpg" alt="" class="img-responsive"><br>
+<b class="ubuntu">What is field?</b><br>
+Every table is broken up into smaller entities called fields. The fields in the CUSTOMERS table consist of ID, NAME, AGE, ADDRESS <br>and SALARY.
+A field is a column in a table that is designed to maintain specific information about every record in the table. <br><br>
+<b class="ubuntu">What is record or row?</b><br>
+A record, also called a row of data, is each individual entry that exists in a table. For example there are 7 records in the above CUSTOMERS table. Following is a single row of data or record in the CUSTOMERS table: <br><br>
+<img src="sqlop1.jpg" alt="" class="img-responsive" style="width:300px;height:100px;"><br><br>
+<b class="ubuntu">What is column?</b><br>
+A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+For example, a column in the CUSTOMERS table is ADDRESS, which represents location description and would consist of the following: <br><br>
+<img src="sqlop2.jpg" alt="" class="img-responsive" style="width:100px;height:300px;"><br><br>
+<b class="ubuntu">What is NULL value?</b><br>
+A NULL value in a table is a value in a field that appears to be blank, which means a field with a NULL value is a field with no value. <br>
+It is very important to understand that a NULL value is different than a zero value or a field that contains spaces. A field with a NULL value <br> is one that has been left blank during record creation. <br>
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">SQL Constraints</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">Constraints are the rules enforced on data columns on table. These are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the database. <br>
+Constraints could be column level or table level. Column level constraints are applied only to one column where as table level constraints are applied to the whole table. <br>
+Following are commonly used constraints available in SQL : <br>
+<b class="ubuntu">•	NOT NULL Constraint :</b> Ensures that a column cannot have NULL value. <br>
+<b class="ubuntu">•	DEFAULT Constraint :</b> Provides a default value for a column when none is specified. <br>
+<b class="ubuntu">•	UNIQUE Constraint :</b> Ensures that all values in a column are different. <br>
+<b class="ubuntu">•	PRIMARY Key :</b> Uniquely identified each rows/records in a database table. <br>
+<b class="ubuntu">•	FOREIGN Key :</b> Uniquely identified a rows/records in any another database table. <br>
+<b class="ubuntu">•	CHECK Constraint :</b> The CHECK constraint ensures that all values in a column satisfy certain conditions. <br>
+<b class="ubuntu">•	INDEX :</b> Use to create and retrieve data from the database very quickly. <br>
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">SQL Syntax</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+<b class="ubuntu">SQL SELECT Statement :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name;</pre>
+<b class="ubuntu">SQL DISTINCT Clause :</b><br>
+<pre>SELECT DISTINCT column1, column2....columnN
+FROM   table_name;</pre>
+<b class="ubuntu">SQL WHERE Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION;</pre>
+<b class="ubuntu">SQL AND/OR Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION-1 {AND|OR} CONDITION-2;</pre>
+<b class="ubuntu">SQL IN Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name IN (val-1, val-2,...val-N);</pre>
+<b class="ubuntu">SQL BETWEEN Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name BETWEEN val-1 AND val-2;</pre>
+<b class="ubuntu">SQL LIKE Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name LIKE { PATTERN };</pre>
+<b class="ubuntu">SQL ORDER BY Clause :</b><br>
+<pre>SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION
+ORDER BY column_name {ASC|DESC};</pre>
+<b class="ubuntu">SQL GROUP BY Clause :</b><br>
+<pre>SELECT SUM(column_name)
+FROM   table_name
+WHERE  CONDITION
+GROUP BY column_name;</pre>
+<b class="ubuntu">SQL COUNT Clause :</b><br>
+<pre>SELECT COUNT(column_name)
+FROM   table_name
+WHERE  CONDITION;</pre>
+<b class="ubuntu">SQL HAVING Clause :</b><br>
+<pre>SELECT SUM(column_name)
+FROM   table_name
+WHERE  CONDITION
+GROUP BY column_name
+HAVING (arithematic function condition);</pre>
+<b class="ubuntu">SQL CREATE TABLE Statement :</b><br>
+<pre>CREATE TABLE table_name(
+column1 datatype,
+column2 datatype,
+column3 datatype,
+.....
+columnN datatype,
+PRIMARY KEY( one or more columns )
+);</pre>
+<b class="ubuntu">SQL DROP TABLE Statement :</b><br>
+<pre>DROP TABLE table_name;</pre>
+<b class="ubuntu">SQL CREATE INDEX Statement :</b><br>
+<pre>CREATE UNIQUE INDEX index_name
+ON table_name ( column1, column2,...columnN);</pre>
+<b class="ubuntu">SQL DROP INDEX Statement :</b><br>
+<pre>ALTER TABLE table_name
+DROP INDEX index_name;</pre>
+<b class="ubuntu">SQL DESC Statement :</b><br>
+<pre>DESC table_name;</pre>
+<b class="ubuntu">SQL TRUNCATE TABLE Statement :</b><br>
+<pre>TRUNCATE TABLE table_name;</pre>
+<b class="ubuntu">SQL ALTER TABLE Statement :</b><br>
+<pre>ALTER TABLE table_name {ADD|DROP|MODIFY} column_name {data_ype};</pre>
+<b class="ubuntu">SQL ALTER TABLE Statement (Rename) :</b><br>
+<pre>ALTER TABLE table_name RENAME TO new_table_name;</pre>
+<b class="ubuntu">SQL INSERT INTO Statement :</b><br>
+<pre>INSERT INTO table_name( column1, column2....columnN)
+VALUES ( value1, value2....valueN);</pre>
+<b class="ubuntu">SQL UPDATE Statement :</b><br>
+<pre>UPDATE table_name
+SET column1 = value1, column2 = value2....columnN=valueN
+[ WHERE  CONDITION ];</pre>
+<b class="ubuntu">SQL DELETE Statement :</b><br>
+<pre>DELETE FROM table_name
+WHERE  {CONDITION};</pre>
+<b class="ubuntu">SQL CREATE DATABASE Statement :</b><br>
+<pre>CREATE DATABASE database_name;</pre>
+<b class="ubuntu">SQL DROP DATABASE Statement :</b><br>
+<pre>DROP DATABASE database_name;</pre>
+<b class="ubuntu">SQL USE Statement :</b><br>
+<pre>USE database_name;</pre>
+<b class="ubuntu">SQL COMMIT Statement :</b><br>
+<pre>COMMIT;</pre>
+<b class="ubuntu">SQL ROLLBACK Statement :</b><br>
+<pre>ROLLBACK;</pre>
+</div>
+      </div>
+    </div>
+  </div> 
+			</div>
+		</section>
+
+
+
+	<!--footer here-->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+				    <h4>What is CodeNex</h4><br>
+                    <p><a href="contact.html">About Us</a></p>
+                    <p><a href="contact.html">Authors</a></p>
+                    <p><a href="contact.html">Contact Us</a></p><br>
+                    
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Tutorials</h4><br>
+                    <p><a href="c-tutorial.html">C</a></p>
+                    <p><a href="java-tutorial.html">Java</a></p>
+                    <p><a href="ds-tutorial.html">DS</a></p>
+                    <p><a href="sql-tutorial.html">Sql</a></p><br>
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Test</h4><br>
+                    <p><a href="c-test.html">C</a></p>
+                    <p><a href="java-test.html">Java</a></p>
+                    <p><a href="ds-test.html">DS</a></p><br>
+                    
+				
+				</div><br><br>
+			</div><hr width="15%"><br><br>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 text-center">
+					<a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-google-plus fa-3x"></i></a>
+				</div><br><br><br>
+				<div class="col-md-4"></div>
+			</div><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md_12 text-center"><p><b><i class="fa fa-copyright 2x text-center"></i> CodeNex - SRS</b></p></div>
+				</div>
+			</div><br><br>
+			
+			<div class="row">
+				<div class="col-md-12 text-center">
+				<a href="#start">
+				<i class="fa fa-chevron-up fa-2x"></i>
+				</a>
+			</div>
+			</div>
+		</div><br><br>
+	</section>
+<!--left side menu-->
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn text-center" onclick="closeNav()" style="color:#818181;"><b><i class="fa fa-times" aria-hidden="true"></i></b></a>
+<a href="index.html">Home</a>
+<a href="alltest.html">Test</a>
+<a href="c-tutorial.html">Tutorials</a>
+<a href="#">Program</a>
+<a href="contact.html">About Us</a>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+	$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-c-java");
+        }
+    });
+  });
+	$(window).scroll(function() {
+    $(".slideanim1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-ds-sql");
+        }
+    });
+  });
+</script>
+</body>
+</html>

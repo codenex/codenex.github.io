@@ -1,0 +1,373 @@
+1.	
+Which of the following statement is correct about the program?
+#include<stdio.h>
+int main()
+{
+    FILE *fp;
+    char str[11], ch;
+    int i=0;
+    fp = fopen("INPUT.TXT", "r");
+    while((ch=getc(fp))!=EOF)
+    {
+        if(ch == '\n' || ch == ' ')
+        {
+            str[i]='\0';
+            strrev(str);
+            printf("%s", str);
+            i=0;
+        }
+        else
+            str[i++]=ch;
+    }
+    fclose(fp);
+    return 0;
+}	
+A.The code writes a text to a file
+
+B.The code reads a text files and display its content in reverse order
+		
+C.The code writes a text to a file in reverse order
+	
+D.None of above
+
+
+Correct Answer: Option B
+
+Explanation:
+
+This program reads the file INPUT.TXT and store it in the string str after reversing the string using strrev function.
+
+
+2.	
+What are the different types of real data type in C ?
+	
+A.  float, double
+	
+B.short int, double, long int
+		
+C.float, double, long double
+	
+D.  double, long int, float
+
+
+Correct Answer: Option C
+
+Explanation:
+
+The floating point data types are called real data types. Hence float, double, and long double are real data types.
+
+
+
+
+3.	In which order do the following gets evaluated
+1.	Relational
+2.	Arithmetic
+3.	Logical
+4.	Assignment
+	
+A.2134
+		
+B.1234
+	
+C. 4321
+		
+D.3214
+
+
+Correct Answer: Option A
+
+Explanation:
+
+2. Arithmetic operators: *, /, %, +, - 
+1. Relational operators: >, <, >=, <=, ==, !=
+3. Logical operators : !, &&, ||
+4. Assignment operators: =
+
+
+
+4.	In which numbering system can the binary number 1011011111000101 be easily converted to?
+	
+A.  Decimal system
+
+B.  Hexadecimal system
+
+C.  Octal system
+		
+D.No need to convert
+
+
+Correct Answer: Option B
+
+Explanation:
+
+Hexadecimal system is better, because each 4-digit binary represents one Hexadecimal digit.
+
+
+
+5.	Which bitwise operator is suitable for turning on a particular bit in a number?
+	
+A. && operator
+	
+B.  & operator
+
+C.  || operator
+
+D.  | operator
+
+
+Correct Answer: Option D
+
+
+
+6.	Global variable are available to all functions. Does there exist a mechanism by way of which it available to some and not to others.
+	
+A.  Yes
+	
+B. No
+
+
+Correct Answer: Option B
+
+Explanation:
+
+The only way this can be achieved is to define the variable locally in main() instead of defining it globally and then passing it to the functions which need it.
+
+7.	What will be the output of the program?
+#include<stdio.h>
+
+int main()
+{
+    printf("%d %d\n", 32<<1, 32<<0);
+    printf("%d %d\n", 32<<-1, 32<<-0);
+    printf("%d %d\n", 32>>1, 32>>0);
+    printf("%d %d\n", 32>>-1, 32>>-0);
+    return 0;
+}
+		
+A.Garbage values
+	
+B.  64 32 0 32 16 32 0 32
+
+C.All zeros
+
+D.8 0 0 0 32 0 0 16
+
+Correct Answer: Option B
+
+
+8.	size of union is size of the longest element in the union
+		
+A.Yes
+B. No
+
+
+Correct Answer: Option A
+
+
+9.	By default, the data type of a constant without a decimal point is int, whereas the one with a decimal point is a double.
+	A.	Yes
+
+	B.	No
+
+
+
+Correct Answer: Option A
+
+Explanation:
+
+6 is int constant. 
+6.68 is double. 
+6.68L is long double constant. 
+6.68f is float constant. 
+
+
+10.	Which of the following function is correct that finds the length of a string?
+		
+A. int xstrlen(char *s)
+{
+    int length=0;
+    while(*s!='\0')
+    {    length++; s++; }
+    return (length);
+}
+	
+B. int xstrlen(char s)
+{
+    int length=0;
+    while(*s!='\0')
+        length++; s++;
+    return (length);
+}
+		
+C. int xstrlen(char *s)
+{
+    int length=0;
+    while(*s!='\0')
+        length++;
+    return (length);
+}
+	
+D. int xstrlen(char *s)
+{
+    int length=0;
+    while(*s!='\0')
+        s++;
+    return (length);
+}
+
+
+Correct Answer: Option A
+
+Explanation:
+
+Option A is the correct function to find the length of given string.
+
+Example:
+
+#include<stdio.h>
+
+int xstrlen(char *s)
+{
+    int length=0;
+    while(*s!='\0')
+    { length++; s++; }
+    return (length);
+}
+
+int main()
+{
+    char d[] = "IndiaBIX";
+    printf("Length = %d\n", xstrlen(d));
+    return 0;
+}
+Output: Length = 8
+
+
+11.	
+What will be the output of the program?
+#include<stdio.h>
+
+int main()
+{
+    const int x=5;
+    const int *ptrx;
+    ptrx = &x;
+    *ptrx = 10;
+    printf("%d\n", x);
+    return 0;
+}
+	A.	5
+
+	B.	10
+
+	C.	Error
+
+	D.	Garbage value
+
+Correct Answer: Option C
+
+Explanation:
+
+Step 1: const int x=5; The constant variable x is declared as an integer data type and initialized with value '5'.
+
+Step 2: const int *ptrx; The constant variable ptrx is declared as an integer pointer.
+
+Step 3: ptrx = &x; The address of the constant variable x is assigned to integer pointer variable ptrx.
+
+Step 4: *ptrx = 10; Here we are indirectly trying to change the value of the constant vaiable x. This will result in an error.
+
+To change the value of const variable x we have to use *(int *)&x = 10;
+
+12.	
+Is there any difference in the #define and typedef in the following code?
+typedef char * string_t;
+#define string_d char *;
+string_t s1, s2;
+string_d s3, s4;
+	A.	Yes
+
+	B.	No
+
+Correct Answer: Option A
+
+Explanation:
+
+In these declarations, s1, s2 and s3 are all treated as char*, but s4 is treated as a char, which is probably not the intention.
+
+13.	
+Can I increase the size of statically allocated array?
+	A.	Yes
+
+	B.	No
+
+Correct Answer: Option B
+
+14.	Which of the following statements correct about the below program?
+#include<stdio.h>
+
+int main()
+{
+    struct emp
+    {
+        char name[25];
+        int age;
+        float sal;
+    };
+    struct emp e[2];
+    int i=0;
+    for(i=0; i<2; i++)
+        scanf("%s %d %f", e[i].name, &e[i].age, &e[i].sal);
+
+    for(i=0; i<2; i++)
+        scanf("%s %d %f", e[i].name, e[i].age, e[i].sal);
+    return 0;
+}
+	
+A.Error: scanf() function cannot be used for structures elements.
+		
+B.The code runs successfully.
+		
+C.Error: Floating point formats not linked Abnormal program termination.
+	
+D.Error: structure variable must be initialized.
+
+
+Correct Answer: Option C
+
+
+
+15.	Which of the following statements are correct about the program below?
+#include<stdio.h>
+
+int main()
+{
+    int size, i;
+    scanf("%d", &size);
+    int arr[size];
+    for(i=1; i<=size; i++)
+    {
+        scanf("%d", arr[i]);
+        printf("%d", arr[i]);
+    }
+    return 0;
+}
+	
+A.The code is erroneous since the subscript for array used in for loop is in the range 1 to size.
+	
+B.The code is erroneous since the values of array are getting scanned through the loop.
+
+C.The code is erroneous since the statement declaring array is invalid.
+		
+D.The code is correct and runs successfully.
+
+Correct Answer: Option C
+
+Explanation:
+
+The statement int arr[size]; produces an error, because we cannot initialize the size of array dynamically. Constant expression is required here.
+
+Example: int arr[10];
+
+One more point is there, that is, usually declaration is not allowed after calling any function in a current block of code. In the given program the declaration int arr[10]; is placed after a function call scanf().
+
+

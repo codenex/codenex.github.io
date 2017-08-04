@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>::New User Registration::</title>
+</head>
+<body>
+	<div style="margin-left:35%;margin-right:35%;"><h2>Registration</h2>
+		<form action="add-user.php" method="post">
+			<label for="name">Name : <input type="text" placeholder="Enter your name" required="required" id="name"></label><br><br>
+			<label for="iam">I am a : <select name="iam" id="iam" required="required">
+				<option value="BIT Student">BIT Student</option>
+				<option value="Other College Student">Other Student</option>
+				<option value="Professional">Professional</option>
+				<option value=Other>Other</option>
+			</select></label><br><br>
+			<label for="sex1">Sex : <input type="radio" value="Male" name="sex" id="sex1" required>Male</label>
+			<label for="sex2"><input type="radio" value="Female" name="sex" id="sex2" required>Female</label><br><br>
+			<label for="choide">I am interested in : <select name="interested" id="interested" required="required">
+				<option value="java">Java</option>
+				<option value="C">C</option>
+				<option value="HTML">HTML CSS</option>
+				<option value="DS">Data Structures</option>
+			</select></label><br><br>
+			<label for="pwd">Choose your password : <input type="password" placeholder="8 characters minimum" required="required"></label><br><br>
+			<input type="Submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

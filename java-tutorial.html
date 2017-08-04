@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content="5;url=welcome.html" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>::Java tutorial::</title>
+	<!-- Local bootstrap CSS & JS -->
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Revalia">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dheerese.js"></script>
+	<script src="check.js"></script>
+
+</head>
+<body oncontextmenu="disable();"><!-- <section id="codenex"><br>
+<center><img src="img/logo.jpg" alt="" class="appear"></center>
+	<h1><span>C</span>O<span>D</span>E<span>N</span>E<span class="x">X</span></h1>
+	
+<br><br>
+	<h3 id="fromleft">An E-Learning Website </h3><h3 id="fromright">For Programmers</h3><br>
+
+	<center><br>
+		<a class="a" href="#start">Start Here <strong><font color="white">></font><font color="red">></font></strong></a>
+	</center><br><br></section> -->
+	<!-- <br><br><br><br><br><br> -->
+	<section id="start">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			<div class="navbar-header">
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+<!-- <a href="#open" class="text-right" style="color:black;text-decoration:none;"><h2 style="color:white;" onclick="openNav()">&#9758;</h2></a> -->
+<div class="logo-nav"></div>
+<a href="index.html" style="font-size:30px;color:white;text-decoration:none;">
+
+CodeNex <a href="#open" onclick="openNav()" class="dots" style="font-size:30px;color:white;text-decoration:none;"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li></li>
+					<li><a href="index.html"><b>Home</b></a></li>
+					
+					<!-- <li><a href="#">Tutorials</a></li> -->
+					<li>
+						<a href="alltest.html" target="_blank"><b>Test</b></a>
+						<!-- <ul class="dropdown-menu">
+							<li><a target="_blank" href="c-test.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a target="_blank" href="java-test.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a target="_blank" href="ds-test.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							
+						</ul> -->
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Tutorials</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="c-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="java-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="ds-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="sql-tutorial.html" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Programs</b> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">C</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Java</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Data Structure</a></li>
+							<li><a href="#" style="background-color:#fff;"  class="drop_menu_slide">Sql</a></li>
+						</ul>
+					</li>
+					<!-- <li><a href="#">Program</a></li> -->
+					<li><a href="contact.html"><b>About Us</b></a></li>
+				</ul>
+				
+			</div>
+			
+  
+
+		</div>
+
+	</nav>
+	     <!-- <div class="container"><br><br>
+	     	<h3><i class="fa fa-users fa-2x"></i></h3>
+	     	<h2 class="text-center" style="color:#747275">Tutorials</h2><br><br><br>
+	     	<div class="row">
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center c slideanim"><br><img class="img-responsive icon" src="icons/c.png" alt="c"><br><b>C</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center java slideanim1"><br><img class="img-responsive icon" src="icons/java.png" alt="java"><br><b>Java</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center ds slideanim"><br><img class="img-responsive icon" src="icons/ds.png" alt="ds"><br><b>DS</b><br><br></div>
+	     		</div></a>
+	     		<div class="col-sm-3">
+	     			<a href="" style="text-decoration:none;"><div class="thumbnail text-center sql slideanim1"><br><img class="img-responsive icon" src="icons/sql.png" alt="sql"><br><b>Sql</b><br><br></div>
+	     		</div></a>
+	     	</div><br><br><br>
+	     </div> -->
+		</section>
+                 
+                  <!-- list of test types -->
+		<!-- <section id="alltest"> 
+		<div style="background-color:#ebffec;"><br><br><br><br>
+
+			<h3 align="center" style="color:black;">Select Desired Test</h3><br>
+			<p align="center">All questions are asked in competitive exams, here it is for you!!!</p><br></div>
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Warmup Test-Including C, DS and Java</h4>
+					<center><a href="warmup.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Test-Including C, DS and Java</h4>
+					
+				<center><a href="mix.html" class="btn btn-sm btn-success" target="_blank" disabled>Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">SQL Test</h4>
+					
+				<center><a href="sql-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">C Test</h4>
+					
+				<center><a href="c-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Core Java Test</h4>
+					
+				<center><a href="java-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+
+		<div class="container-fluid"><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 test-bar">
+					<br><br>
+						<h4 style="color:#5cb85c;line-height:150%;" class="text-center">Data Structure Test</h4>
+					
+				<center><a href="ds-test.html" class="btn btn-sm btn-success" target="_blank">Start Test</a></center>
+					<br><br>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div><br>
+		</section> -->
+
+
+		<section id="tutorial-page"><br>
+		<div style="background-color:#d9edf7;"><br><br><h3><i class="fa fa-users fa-2x"></i></h3>
+	     		<h2 class="text-center" style="color:#747275">Java</h2><br>
+	     		<br></div><br>
+			<div class="container">
+				<div class="panel-group" id="accordion">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Overview</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body ubuntu">
+ 
+<strong style="font-size:250%;">J</strong>ava is one of the world's most important and widely used computer languages, and it has held this distinction for many years. Unlike some other computer languages whose influence has weared with passage of time, while Java's has grown.
+As of 2015, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers using and working on it.
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">History</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        Java was developed by James Ghosling, Patrick Naughton, Mike Sheridan at Sun Microsystems Inc. in 1991. It took 18 months to develop the first working version. <br>
+The initial name was Oak but it was renamed to Java in 1995 as OAK was a registered trademark of another Tech company. <br>
+
+<b class="ubuntu">Evolution of Java : </b><br>
+Java was initially launched as Java 1.0 but soon after its initial release, Java 1.1 was launched. <br>Java 1.1 redefined event handling, new library elements were added. <br>
+In Java 1.2 Swing and Collection framework was added and suspend(), resume() and stop() methods were deprecated from Thread class. <br>
+No major changes were made into Java 1.3 but the next release that was Java 1.4 contained several important changes. Keyword assert, chained exceptions and channel based I/O System was introduced. <br>
+Java 1.5 was called J2SE 5, it added following major new features : <br>
+•	Generics <br>
+•	Annotations <br>
+•	Autoboxing and autounboxing <br>
+•	Enumerations <br>
+•	For-each Loop <br>
+•	Varargs <br>
+•	Static Import <br>
+•	Formatted I/O <br>
+•	Concurrency utilities <br>
+Next major release was Java SE 7 which included many new changes, like : <br>
+•	Now String can be used to control Switch statement. <br>
+•	Multi Catch Exception <br>
+•	try-with-resource statement <br>
+•	Binary Integer Literals <br>
+•	Underscore in numeric literals, etc. <br>
+And the latest addition to the lot is, <code>Java SE 8</code>, it was released on March 18, 2014. Some of the major new features introduced in JAVA 8 are, <br>
+•	Lambda Expressions. <br>
+•	New Collection Package java.util.stream to provide Stream API. <br>
+•	Enhanced Security. <br>
+•	Nashorn Javascript Engine included. <br>
+•	Parallel Array Sorting. <br>
+•	The JDBC-ODBC Bridge has been removed etc. <br>
+</div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Applications</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        Java is widely used in every corner of world and of human life. Java is not only used in softwares but is also widely used in designing hardware controlling software components. <br>There are more than 930 million JRE downloads each year and 3 billion mobile phones run java.
+Following are some other usage of Java : <br>
+1.	Developing Desktop Applications <br>
+2.	Web Applications like Linkedin.com, Snapdeal.com etc <br>
+3.	Mobile Operating System like Android <br>
+4.	Embedded Systems <br> 
+5.	Robotics and games etc. <br>
+</div>
+      </div>
+    </div>
+       <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Features</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        	<b class="ubuntu">1) Simple : </b><br>
+Java is easy to learn and its syntax is quite simple, clean and easy to understand.The confusing and ambiguous concepts of C++ are either left out in Java or they have been re-implemented in a cleaner way. <br>
+Eg : Pointers and Operator Overloading are not there in java but were an important part of C++. <br>
+
+<b class="ubuntu">2) Object Oriented : </b><br>
+In java everything is Object which has some data and behaviour. Java can be easily extended as it is based on Object Model. <br>
+
+
+<b class="ubuntu">3) Robust : </b><br>
+Java makes an effort to eliminate error prone codes by emphasizing mainly on compile time error checking and runtime checking. But the main areas which Java improved were Memory Management and mishandled Exceptions by introducing automatic Garbage Collector and Exception Handling. <br>
+
+
+<b class="ubuntu">4) Platform Independent : </b><br>
+Unlike other programming languages such as C, C++ etc which are compiled into platform specific machines. Java is guaranteed to be write-once, run-anywhere language.
+On compilation Java program is compiled into bytecode. This bytecode is platform independent and can be run on any machine, plus this bytecode format also provide security. Any machine with Java Runtime Environment can run Java Programs. <br>
+<img src="java.jpg" alt="" class="img-responsive"><br>
+			<b class="ubuntu">5) Secure : </b><br>
+When it comes to security, Java is always the first choice. With java secure features it enable us to develop virus free, temper free system. Java program always runs in Java runtime environment with almost null interaction with system OS, hence it is more secure. <br>
+
+
+<b class="ubuntu">6) Multi Threading : </b><br>
+Java multithreading feature makes it possible to write program that can do many tasks simultaneously. Benefit of multithreading is that it utilizes same memory and other resources to execute multiple threads at the same time, like While typing, grammatical errors are checked along. <br>
+
+
+<b class="ubuntu">7) Architectural Neutral : </b><br>
+Compiler generates bytecodes, which have nothing to do with a particular computer architecture, hence a Java program is easy to intrepret on any machine. <br>
+
+
+<b class="ubuntu">8) Portable : </b><br>
+Java Byte code can be carried to any platform. No implementation dependent features. Everything related to storage is predefined, example: size of primitive data types. <br>
+
+
+<b class="ubuntu">9) High Performance : </b><br>
+Java is an interpreted language, so it will never be as fast as a compiled language like C or C++. But, Java enables high performance with the use of just-in-time compiler.
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Constructor</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">A constructor is a special method that is used to initialize an object. <br>	Every class has a constructor,if we don't explicitly declare a constructor for any java class the compiler builds a default constructor for that class. <br> A constructor does not have any return type.
+<br>A constructor has same name as the class in which it resides. Constructor in Java can not be abstract, static, final or synchronized. These modifiers are not allowed for constructor.
+ <br>
+<pre>
+class Car
+{
+ String name ;
+ String model;
+ Car( )    //Constructor 
+ {
+  name ="";
+  model="";
+ }
+}		
+
+</pre>
+<br>
+There are two types of Constructor <br>
+•	Default Constructor <br>
+•	Parameterized constructor <br>
+Each time a new object is created at least one constructor will be invoked. <br>
+<pre>
+Car c = new Car()       //Default constructor invoked
+Car c = new Car(name); //Parameterized constructor invoked
+</pre><br>
+<b class="ubuntu">Constructor Overloading :</b><br>
+<pre>
+class Cricketer 
+{
+ String name;
+ String team;
+ int age;
+ Cricketer ()   //default constructor.
+ {
+  name ="";
+  team ="";
+  age = 0;
+ }
+ Cricketer(String n, String t, int a)   //constructor overloaded
+ {
+  name = n;
+  team = t;
+  age = a;
+ }
+ Cricketer (Cricketer ckt)     //constructor similar to copy constructor of c++ 
+ {
+  name = ckt.name;
+  team = ckt.team;
+  age = ckt.age;
+ }
+ public String toString() 
+ {
+  return "this is " + name + " of "+team;
+ }
+}
+
+Class test
+{
+ public static void main (String[] args)
+ {
+  Cricketer c1 = new Cricketer();
+  Cricketer c2 = new Cricketer("sachin", "India", 32);
+  Cricketer c3 = new Cricketer(c2 );
+  System.out.println(c2);
+  System.out.println(c3);
+  c1.name = "Virat";
+  c1.team= "India";
+  c1.age = 32;
+  System .out. print in (c1);
+ }
+}
+
+</pre><br>
+<b class="ubuntu">output :</b><br>
+<pre>
+this is sachin of india
+this is sachin of india
+this is virat of india
+</pre>
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Inheritance</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        	Inheritance is one of the key features of Object Oriented Programming. <br> Inheritance provided mechanism that allowed a class to inherit property of another class. When a Class extends another class it inherits all non-private members including fields and methods. Inheritance in Java can be best understood in terms of Parent and Child relationship, also known as Super class(Parent) and Sub class(child) in Java language. <br>
+Inheritance defines <code>is-a</code> relationship between a Super class and its Sub class. extends and implementskeywords are used to describe inheritance in Java. <br>
+<img src="inheritance.jpg" alt="" class="img-responsive"><br>
+Let us see how extend keyword is used to achieve Inheritance. <br>
+<pre>
+class Vehicle. 
+{
+  ......  
+}
+class Car extends Vehicle 
+{
+ .......  //extends the property of vehicle class.
+}
+
+</pre><br>
+<b class="ubuntu">Types of Inheritance : </b><br>
+1.	Single Inheritance <br>
+2.	Multilevel Inheritance <br>
+3.	Heirarchical Inheritance <br>
+NOTE :Multiple inheritance is not supported in java <br>
+
+
+
+
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-info">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Multithreading</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body ubuntu">
+        A program can be divided into a number of small processes. Each small process can be addressed as a single thread (a lightweight process). <br> Multithreaded programs contain two or more threads that can run concurrently. This means that a single program can perform two or more tasks simultaneously. <br> For example, one thread is writing content on a file at the same time another thread is performing spelling check. <br>
+In Java, the word thread means two different things. <br>
+•	An instance of Thread class. <br>
+•	or, A thread of execution. <br>
+An instance of Thread class is just an object, like any other object in java. But a thread of execution means an individual "lightweight" process that has its own call stack. In java each thread has its own call stack. <br>
+<img src="multithreading.jpg" alt="" class="img-responsive"><br>
+<b class="ubuntu">The main thread : </b><br>
+Even if you don't create any thread in your program, a thread called main thread is still created. Although the main thread is automatically created, you can control it by obtaining a reference to it by calling currentThread() method. <br>
+Two important things to know about main thread are, <br>
+•	It is the thread from which other threads will be produced. <br>
+•	main thread must be always the last thread to finish execution. <br>
+<pre>
+class MainThread
+{
+ public static void main(String[] args)
+ {
+  Thread t=Thread.currentThread();
+  t.setName("MainThread");
+  System.out.println("Name of thread is "+t);
+ }
+}
+</pre><br>
+<b class="ubuntu">Output :</b><br>
+<pre>
+Name of thread is Thread[MainThread,5,main]
+</pre><br>
+<b class="ubuntu">Life cycle of a Thread :</b><br>
+<img src="threadcycle.jpg" alt="" class="img-responsive"><br><br>
+<b class="ubuntu">1.	New :</b> A thread begins its life cycle in the new state. It remains in this state until the start() method is called on it. <br>
+<b class="ubuntu">2.	Runable :</b> After invocation of start() method on new thread, the thread becomes runable. <br>
+<b class="ubuntu">3.	Running :</b> A method is in running thread if the thread scheduler has selected it. <br>
+<b class="ubuntu">4.	Waiting :</b> A thread is waiting for another thread to perform a task. In this stage the thread is still alive. <br>
+<b class="ubuntu">5.	Terminated :</b> A thread enter the terminated state when it complete its task. <br>
+
+
+
+</div>
+      </div>
+    </div>
+  </div> 
+			</div>
+		</section>
+
+
+
+	<!--footer here-->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+				    <h4>What is CodeNex</h4><br>
+                    <p><a href="contact.html">About Us</a></p>
+                    <p><a href="contact.html">Authors</a></p>
+                    <p><a href="contact.html">Contact Us</a></p><br>
+                    
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Tutorials</h4><br>
+                    <p><a href="c-tutorial.html">C</a></p>
+                    <p><a href="java-tutorial.html">Java</a></p>
+                    <p><a href="ds-tutorial.html">DS</a></p>
+                    <p><a href="sql-tutorial.html">Sql</a></p><br>
+				
+				</div>
+				<div class="col-md-4 text-center">
+				    <h4>Test</h4><br>
+                    <p><a href="c-test.html">C</a></p>
+                    <p><a href="java-test.html">Java</a></p>
+                    <p><a href="ds-test.html">DS</a></p><br>
+                    
+				
+				</div><br><br>
+			</div><hr width="15%"><br><br>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 text-center">
+					<a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-google-plus fa-3x"></i></a>
+				</div><br><br><br>
+				<div class="col-md-4"></div>
+			</div><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md_12 text-center"><p><b><i class="fa fa-copyright 2x text-center"></i> CodeNex - SRS</b></p></div>
+				</div>
+			</div><br><br>
+			
+			<div class="row">
+				<div class="col-md-12 text-center">
+				<a href="#start">
+				<i class="fa fa-chevron-up fa-2x"></i>
+				</a>
+			</div>
+			</div>
+		</div><br><br>
+	</section>
+<!--left side menu-->
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn text-center" onclick="closeNav()" style="color:#818181;"><b><i class="fa fa-times" aria-hidden="true"></i></b></a>
+<a href="index.html">Home</a>
+<a href="alltest.html">Test</a>
+<a href="c-tutorial.html">Tutorials</a>
+<a href="#">Program</a>
+<a href="contact.html">About Us</a>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+	$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-c-java");
+        }
+    });
+  });
+	$(window).scroll(function() {
+    $(".slideanim1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("appear-ds-sql");
+        }
+    });
+  });
+</script>
+</body>
+</html>
